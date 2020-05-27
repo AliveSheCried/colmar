@@ -1,8 +1,65 @@
-/* || General styles */
-
-/* | Basic reset */
-html {
+/* || Basic reset */
+html,
+body {
     padding: 0;
     margin: 0;
-    border: 0;
+    border: 0;   
+    background-color: #f3f5f5;
+    font-size: 15px;    
 }
+
+ol, ul {
+    list-style: none;
+  }
+
+/* || Typography */
+h1,
+h2,
+h3,
+p {
+    font-family: "Open Sans", sans-serif;
+    color: #4a4a4a;
+}
+
+/* || Global */
+.head {
+    background-color: #ffffff;
+    height: 64px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 8px;
+}
+
+/* || Mobile - portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container {
+        min-width: 320px;
+             
+    }
+
+    .logo {
+        padding-left: 1rem;
+    }
+
+    nav ul li {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+   } 
+
