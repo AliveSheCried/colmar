@@ -1,1 +1,8 @@
+/* || General styles */
 
+/* | Basic reset */
+html {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
