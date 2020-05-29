@@ -16,7 +16,10 @@ ol, ul {
 h1,
 h2,
 h3,
-p {
+p,
+a,
+li,
+span {
     font-family: "Open Sans", sans-serif;
     color: #4a4a4a;
 }
@@ -31,10 +34,16 @@ h3 {
     font-weight: normal;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* || Global */
 /* | Head & Nav */
 .container {
     padding-left: 16px;
+    max-width: 1200px;  
+   
 }
 .head {
     background-color: #ffffff;
@@ -42,7 +51,6 @@ h3 {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     z-index: 99;
 }
@@ -102,7 +110,7 @@ nav ul {
         padding-left: 0;
    }
 
-    .logo {
+    .logo-mobile {
         padding-left: 1rem;
     }
 
@@ -128,6 +136,14 @@ nav ul {
     h3 {
         font-size: 1rem;
     }
+
+
+
+    /* || Hidden from mobile view */ 
+    .logo-desktop-container {
+        display: none;
+    }
+
    } 
 
 
@@ -136,6 +152,71 @@ nav ul {
 @media only screen 
   and (min-device-width: 1200px) 
   {
+     /* || Nav */      
+    .logo-desktop-container {
+        width: 100%;
+        display: flex;  
+        justify-content: space-between;      
+        align-items: center;
+    }
+
+    .logo-desktop-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-desktop img {
+        height: 40px;
+        width: auto;
+    }
+   
+    .logo-text span {
+        font-size: 1.4rem;
+    }
+
+    .academy {
+        color: #9b9b9b;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        margin-right: 24px;
+    }
+
+    nav ul li {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }  
+    
+    a {
+        text-decoration: none;
+    }
+
+
+    /* || Banner */ 
+    .banner-image {
+        width: 60%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .banner-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .banner-text {
+        margin-right: 1.5rem;
+    }
+
+    /* || Mobile hidden */   
+       .logo-mobile {
+        display: none;
+    }
     .nav-mobile {
         display: none;
     }
