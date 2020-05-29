@@ -21,7 +21,21 @@ p {
     color: #4a4a4a;
 }
 
+h1,
+h3 {
+    padding-top: 32px;
+    margin: 0;
+}
+
+h3 {
+    font-weight: normal;
+}
+
 /* || Global */
+/* | Head & Nav */
+.container {
+    padding-left: 16px;
+}
 .head {
     background-color: #ffffff;
     height: 64px;
@@ -30,6 +44,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 }
 
 nav ul {
@@ -37,15 +52,54 @@ nav ul {
     justify-content: space-around;
 }
 
+/* | Banner */
+.banner {
+    width: 100%;
+    position: relative;
+    top: 65px;
+    display: flex;    
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #d8d8d8;
+}
+
+.banner-image {
+    flex: 1 1 320px;
+    overflow: hidden;
+    margin: 0;
+    height: auto;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #4a4a4a;      
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    margin-right: 16px;
+  }
+
+.button p {
+    color: white;
+    font-weight: bold;
+}
+
 
 /* || Mobile */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+  {
+   /* || Nav */   
     .container {
         min-width: 320px;
+        padding-left: 0;
    }
 
     .logo {
@@ -55,7 +109,34 @@ nav ul {
     nav ul li {
         padding-left: 2rem;
         padding-right: 2rem;
-    }
+    }  
     
+    /* || Banner */   
+    .banner-image img {
+        max-width: 100%;
+        
+    }
+
+    .button {
+        background-color: #9b9b9b;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
    } 
 
+
+
+/* || Large screen */
+@media only screen 
+  and (min-device-width: 1200px) 
+  {
+    .nav-mobile {
+        display: none;
+    }
+  }
