@@ -1,4 +1,4 @@
-/* || Basic reset */
+/* || Basic reset *********************************************************************************************************/
 html,
 body {
     padding: 0;
@@ -12,7 +12,7 @@ ol, ul {
     list-style: none;
   }
 
-/* || Typography */
+/* || Typography *********************************************************************************************************/
 h1,
 h2,
 h3,
@@ -49,8 +49,8 @@ img {
     font-weight: bold;
 }
 
-/* || Global */
-/* | Head & Nav */
+/* || Global ************************************************************************************************************/
+/* | Head & Nav *********************************************************************************************************/
 .container {
     padding-left: 16px;
     max-width: 1200px;  
@@ -72,7 +72,7 @@ nav ul {
     justify-content: space-around;
 }
 
-/* | Banner */
+/* | Banner *********************************************************************************************************/
 .banner {
     width: 100%;
     position: relative;
@@ -82,7 +82,6 @@ nav ul {
     flex-wrap: wrap;
     background-color: #d8d8d8;
     overflow: hidden;
-    
 }
 
 .banner-image {
@@ -112,7 +111,7 @@ nav ul {
     font-weight: bold;
 }
 
-/* | SectionOne */
+/* | SectionOne *********************************************************************************************************/
 .sectionOne {
     display: flex;
     align-items: flex-start;
@@ -122,8 +121,7 @@ nav ul {
 .sectionOne-right {
     display: flex;
     flex-direction: column;   
-    justify-content: space-between; 
-    
+    justify-content: space-between;     
 }
 
 .sectionOne-right-cont {
@@ -140,15 +138,36 @@ nav ul {
     text-decoration: none;
 }
 
+/* | SectionTwo ********************************************************************************************************/
+.sectonTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.sectionTwo-title {
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.sectionTwo-box-cont {
+    display: flex;
+}
+
+.sectionTwo-subtitle {
+    padding-top: 16px;
+    padding-left: 16px;
+}
 
 
-
-/* || Mobile */
+/* || Mobile ************************************************************************************************************************************************************/
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   {
-   /* || Nav */   
+   /* || Nav *********************************************************************************************************/   
     .container {
         min-width: 320px;
         padding-left: 0;
@@ -164,7 +183,7 @@ nav ul {
         padding-right: 2rem;
     }  
     
-    /* || Banner */   
+    /* || Banner *********************************************************************************************************/   
     .button {
         background-color: #9b9b9b;
     }
@@ -177,7 +196,7 @@ nav ul {
         font-size: 1rem;
     }
 
-    /* || SectionOne */
+    /* || SectionOne *********************************************************************************************************/
     .sectionOne {
         margin-top: 85px;
     }
@@ -200,8 +219,30 @@ nav ul {
     .lecture {
         border-bottom: 1px solid #4a4a4a;
     }
+
+    /* || SectionTwo *********************************************************************************************************************/
+    .sectionTwo-subtitle {
+        background-color: #d8d8d8;
+    }
+
+    .sectionTwo-box-cont {
+        flex-direction: column;
+    }
+
+    .sectionTwo-subtitle {
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+        
+    }
+
+    .sectionTwo-subtitle h2 {
+        font-size: 0.9rem;
+    }
+
     
-    /* || Hidden from mobile view */ 
+    /* || Hidden from mobile view *********************************************************************************************************/ 
     .logo-desktop-container {
         display: none;
     }
@@ -210,15 +251,23 @@ nav ul {
         display: none; 
     }
 
+    .sectionTwo-img {
+        display: none;
+    }
+
+    .sectionTwo-txt {
+        display: none;
+    }
+
    } 
 
 
 
-/* || Large screen */
+/* || Large screen ***************************************************************************************************************************************************/
 @media only screen 
   and (min-device-width: 1200px) 
   {
-     /* || Nav */      
+     /* || Nav *********************************************************************************************************/      
     .logo-desktop-container {
         width: 100%;
         display: flex;  
@@ -263,7 +312,7 @@ nav ul {
     }
 
 
-    /* || Banner */ 
+    /* || Banner *********************************************************************************************************/ 
     .banner-image {
         width: 60%;
         padding-top: 32px;
@@ -280,7 +329,7 @@ nav ul {
     }
 
 
-    /* || SectionOne */
+    /* || SectionOne *********************************************************************************************************/
     
     .sectionOne-left {
         padding-top: 32px;
@@ -298,8 +347,7 @@ nav ul {
         padding-top: 32px;
         width: 40%;
         display: flex;
-        flex-direction: column;
-      
+        flex-direction: column;      
     }
 
     .sectionOne-right-cont {
@@ -327,10 +375,7 @@ nav ul {
     .sectionOne-right-txt {
         max-width: 65%;
         padding-left: 1.5rem;
-
     }
-
-   
 
     .orientation {
         padding-top: 0px;
@@ -340,7 +385,33 @@ nav ul {
         background-color: #d8d8d8;
     }
 
-    /* || Mobile hidden */   
+
+    /* | SectionTwo *********************************************************************************************************/
+    .sectionTwo {
+        padding-left: 56px;
+        padding-right: 56px;
+        background-color: #d8d8d8;
+    }
+  
+    .sectionTwo-box-cont {
+        flex-wrap: wrap;        
+    }
+  
+   .sectionTwo-box {
+    width: 28%;   
+    background-color: #ffffff;
+    margin: 16px;
+   }
+
+      .sectionTwo-txt {
+       padding-left: 16px;
+   } 
+
+   .sectionTwo-txt {
+    padding-bottom: 24px;
+}
+
+    /* || Mobile hidden *********************************************************************************************************/   
     .logo-mobile {
         display: none;
     }
