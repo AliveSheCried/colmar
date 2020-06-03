@@ -161,6 +161,32 @@ nav ul {
     padding-left: 16px;
 }
 
+/* | SectionThree ********************************************************************************************************/
+.sectionThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.sectionThree-right-cont {
+    display: flex;    
+    align-items: center;   
+}
+
+/* | Footer ********************************************************************************************************/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #9b9b9b;
+}
+
+.footer-txt p{
+    font-size: 0.7rem;
+}
+
+
 
 /* || Mobile ************************************************************************************************************************************************************/
 @media only screen 
@@ -241,6 +267,11 @@ nav ul {
         font-size: 0.9rem;
     }
 
+    /* || SectionThree *********************************************************************************************************************/
+    .sectionThree-video-mobile {
+        max-width: 320px;
+    }
+
     
     /* || Hidden from mobile view *********************************************************************************************************/ 
     .logo-desktop-container {
@@ -259,6 +290,20 @@ nav ul {
         display: none;
     }
 
+    .sectionThree-right {
+        display: none;
+    }
+    .sectionThree-txt {
+        display: none;
+    }
+
+    .sectionThree-video-standard {
+        display: none;
+    }
+
+    .footer-links {
+        display: none;
+    }
    } 
 
 
@@ -398,18 +443,77 @@ nav ul {
     }
   
    .sectionTwo-box {
-    width: 28%;   
-    background-color: #ffffff;
-    margin: 16px;
+        width: 28%;   
+        background-color: #ffffff;
+        margin: 16px;
    }
 
-      .sectionTwo-txt {
+    .sectionTwo-txt {
        padding-left: 16px;
+       padding-bottom: 24px;
    } 
 
-   .sectionTwo-txt {
-    padding-bottom: 24px;
-}
+   
+
+     /* || SectionThree *********************************************************************************************************/
+
+    .sectionThree-row {
+         display: flex;
+         flex-direction: row;
+     }
+    
+    .sectionThree-left {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 24px;
+        overflow: hidden;
+      }
+
+    .sectionThree-right {
+        width: 40%;
+        display: flex;
+        flex-direction: column;      
+    }
+
+    .sectionThree-video video {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .sectionThree-right-cont {
+        padding: 16px;
+    }
+
+    .sectionThree-txt {
+        padding-left: 16px;
+        padding-bottom: 24px;
+    } 
+
+    .sectionThree-txt h3 {
+        font-weight: bold;
+    } 
+
+
+    .sectionThree-right-img {
+        max-width: 35%;        
+    }
+
+ /* || Footer *********************************************************************************************************/
+    footer ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer ul li {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    footer ul li a {
+        font-size: 0.7rem;
+    }
 
     /* || Mobile hidden *********************************************************************************************************/   
     .logo-mobile {
@@ -419,7 +523,9 @@ nav ul {
         display: none;
     }
 
-
+    .sectionThree-video-mobile {
+        display: none;
+    }
      
 
   }
